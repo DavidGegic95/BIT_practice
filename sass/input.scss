@@ -1,0 +1,172 @@
+$purple_1: #200b39;
+$purple_2: #36135f;
+$purple_3: #4c1a85;
+
+
+
+@mixin forbody {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+
+@mixin container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 600px;
+    border: none;
+    color: white;
+}
+
+@mixin size_divs {
+    width: 900px;
+    height: 198px;
+}
+
+
+@mixin html_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin desni_div {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 140%;
+    font-size: 16px;
+
+    .lista {
+        font-size: 32px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    @include forbody;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    div {
+        @include size_divs
+    }
+
+
+    .container {
+        @include container;
+
+        .html_div {
+            @include html_div;
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.levi_div {
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid black;
+
+    .bold {
+        font-weight: 700;
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+.desni_div_html {
+    @include desni_div;
+}
+
+.desni_div_css {
+    @include desni_div;
+}
+
+.desni_div_js {
+    @include desni_div;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#levi_html {
+    background-color: $purple_1;
+}
+
+#levi_css {
+    background-color: $purple_2;
+
+}
+
+#levi_js {
+    background-color: $purple_3;
+}

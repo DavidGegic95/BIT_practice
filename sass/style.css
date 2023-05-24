@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+}
+body h1 {
+  font-size: 40px;
+}
+body div {
+  width: 900px;
+  height: 198px;
+}
+body .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 600px;
+  border: none;
+  color: white;
+}
+body .container .html_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.levi_div {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid black;
+}
+.levi_div .bold {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.desni_div_html {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 140%;
+  font-size: 16px;
+}
+.desni_div_html .lista {
+  font-size: 32px;
+}
+
+.desni_div_css {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 140%;
+  font-size: 16px;
+}
+.desni_div_css .lista {
+  font-size: 32px;
+}
+
+.desni_div_js {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 140%;
+  font-size: 16px;
+}
+.desni_div_js .lista {
+  font-size: 32px;
+}
+
+#levi_html {
+  background-color: #200b39;
+}
+
+#levi_css {
+  background-color: #36135f;
+}
+
+#levi_js {
+  background-color: #4c1a85;
+}
+
+/*# sourceMappingURL=style.css.map */
